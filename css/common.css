@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --light-grey: #f6f6fe;
+  --grey: #808080;
+  --dark: #2e2f42;
+  --blue: #4e75ff;
+  --light-blue: #6c8cff;
+  --red: #ff4e4e;
+  --light-red: #ff7070;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+/* task-1 */
+ul {
+  padding: 0;
+}
+
+#categories {
+  list-style-type: none;
+}
+
+.item {
+  background-color: var(--light-grey);
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  max-width: 392px;
+}
+
+.item > h2 {
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: var(--dark);
+}
+
+.item > ul {
+  list-style-type: none;
+}
+
+.item > ul > li {
+  display: block;
+  border: var(--grey) solid 1px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.item > ul > li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* task-2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.gallery li {
+  list-style: none;
+  width: 360px;
+  height: 300px;
+}
+
+.gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* task-3 */
+#name-input {
+  width: 360px;
+  border: var(--grey) solid 1px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--dark);
+  padding: 8px 16px;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+/* task-4 */
+label {
+  display: block;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--dark);
+}
+
+input {
+  display: block;
+  width: 360px;
+  border: var(--grey) solid 1px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--dark);
+  padding: 8px 16px;
+  margin: 8px 0;
+}
+
+button {
+  background-color: var(--blue);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: white;
+  margin: 8px 0;
+}
+
+button:hover {
+  background-color: var(--light-blue);
+}
+
+/* task-5 */
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* task-6 */
+#controls {
+  display: flex;
+  gap: 16px;
+  padding: 32px;
+  background-color: var(--light-grey);
+  margin-bottom: 16px;
+}
+
+#controls > input {
+  width: 150px;
+}
+
+#controls > button {
+  width: 120px;
+}
+
+#controls > button:last-of-type {
+  background-color: var(--red);
+}
+
+#controls > button:last-of-type:hover {
+  background-color: var(--light-red);
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  row-gap: 44px;
+  padding: 32px;
+  background-color: var(--light-grey);
+}
